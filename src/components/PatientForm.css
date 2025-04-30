@@ -1,0 +1,146 @@
+/* src/components/PatientForm.css */
+.patient-form-container {
+    background-color: #181818;
+    border-radius: 8px;
+    padding: 24px;
+    color: white;
+  }
+  
+  .patient-form-container h1 {
+    color: white;
+    margin-bottom: 24px;
+    font-size: 24px;
+  }
+  
+  .patient-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-layout {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  
+  .form-column {
+    flex: 1;
+  }
+  
+  .form-section {
+    background-color: #282828;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 24px;
+  }
+  
+  .form-section h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 18px;
+    color: #1DB954; /* Spotify green */
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .form-group {
+    margin-bottom: 16px;
+  }
+  
+  .form-group.compact {
+    margin-bottom: 0;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #b3b3b3;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    background-color: #333333;
+    border: 1px solid #333333;
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .form-group input[type="number"],
+  .form-group select {
+    max-width: 200px; /* Make number inputs more compact */
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #1DB954; /* Spotify green */
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-top: 16px;
+  }
+  
+  .button {
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+  
+  .button:hover {
+    transform: scale(1.05);
+  }
+  
+  .button.primary {
+    background-color: #1DB954; /* Spotify green */
+    color: white;
+  }
+  
+  .button.primary:hover {
+    background-color: #1ed760; /* Brighter green on hover */
+  }
+  
+  .button.secondary {
+    background-color: #333333;
+    color: white;
+  }
+  
+  .button.secondary:hover {
+    background-color: #444444;
+  }
+  
+  .button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  .error-message {
+    background-color: rgba(232, 17, 35, 0.2);
+    color: #ff5252;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+  }

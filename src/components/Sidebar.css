@@ -1,0 +1,68 @@
+/* Sidebar.css */
+.sidebar {
+  width: 240px;
+  height: 100%;
+  background-color: #121212; /* Spotify dark background */
+  padding: 16px 0;
+  color: white;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.sidebar-nav-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  color: #b3b3b3;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.sidebar-nav-item:hover {
+  color: white;
+}
+
+.sidebar-nav-item.active {
+  color: white;
+  background-color: #282828;
+}
+
+.sidebar-nav-item i {
+  margin-right: 16px;
+  font-size: 20px;
+}
+
+.sidebar-footer {
+  padding: 16px 24px;
+  border-top: 1px solid #282828;
+  margin-top: auto;
+}
+
+.system-status {
+  display: flex;
+  align-items: center;
+  color: #1DB954; /* Spotify green */
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.status-indicator {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #1DB954; /* Spotify green */
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.system-version {
+  color: #b3b3b3;
+  font-size: 12px;
+}

@@ -1,0 +1,72 @@
+/* Header.css */
+.app-header {
+  background-color: #121212; /* Spotify's dark background */
+  padding: 16px 24px;
+  color: white;
+  border-bottom: 1px solid #282828;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+.user-role {
+  background-color: #333333;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 14px;
+  margin-left: 10px;
+  color: #b3b3b3;
+}
+
+.header-center {
+  text-align: center;
+}
+
+.header-center h1 {
+  margin: 0;
+  color: #1DB954; /* Spotify green */
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.current-datetime {
+  font-size: 14px;
+  color: #b3b3b3;
+  margin-top: 5px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.system-status {
+  color: #b3b3b3;
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+.logout-button {
+  padding: 8px 16px;
+  background-color: #1DB954; /* Spotify green */
+  color: white;
+  border: none;
+  border-radius: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.logout-button:hover {
+  background-color: #1ed760; /* Brighter green on hover */
+}

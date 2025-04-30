@@ -1,0 +1,290 @@
+/* src/components/PatientQueue.css */
+.queue-container {
+  background-color: #181818;
+  border-radius: 8px;
+  padding: 24px;
+  color: white;
+}
+
+.queue-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.queue-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.queue-header-left h1 {
+  margin: 0;
+  font-size: 24px;
+  margin-right: 24px;
+}
+
+.queue-stats {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.stat-pill {
+  background-color: #333333;
+  border-radius: 16px;
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #b3b3b3;
+  margin-right: 8px;
+}
+
+.stat-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1DB954; /* Spotify green */
+}
+
+.queue-filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.filter-button {
+  padding: 8px 16px;
+  border-radius: 16px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #333333;
+  color: white;
+  transition: transform 0.2s;
+}
+
+.filter-button:hover {
+  transform: scale(1.05);
+}
+
+.filter-button.active {
+  background-color: #1DB954; /* Spotify green */
+}
+
+.filter-button.level-1 {
+  border: 1px solid #e53935;
+}
+
+.filter-button.level-2 {
+  border: 1px solid #ff9800;
+}
+
+.filter-button.level-3 {
+  border: 1px solid #ffd600;
+}
+
+.filter-button.level-4 {
+  border: 1px solid #4caf50;
+}
+
+.filter-button.level-5 {
+  border: 1px solid #2196f3;
+}
+
+.patient-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.patient-card {
+  border-radius: 8px;
+  padding: 16px;
+  border: 2px solid #000000; /* Black border for all patient cards */
+  color: #000000; /* Black text for all patient cards */
+}
+
+.patient-card.triage-1 {
+  background-color: #e53935; /* Red */
+}
+
+.patient-card.triage-2 {
+  background-color: #ff9800; /* Orange */
+}
+
+.patient-card.triage-3 {
+  background-color: #ffd600; /* Yellow */
+}
+
+.patient-card.triage-4 {
+  background-color: #4caf50; /* Green */
+}
+
+.patient-card.triage-5 {
+  background-color: #2196f3; /* Blue */
+}
+
+.patient-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.patient-id {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.patient-triage {
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #ffffff; /* Keep this white for contrast */
+}
+
+.patient-body {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.patient-info {
+  margin-right: 16px;
+}
+
+.patient-demographics {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.patient-complaint {
+  font-size: 14px;
+}
+
+.patient-vitals {
+  display: flex;
+  gap: 12px;
+}
+
+.vital-sign {
+  font-size: 14px;
+}
+
+.vital-label {
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.patient-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.wait-time, .arrival-time {
+  font-size: 14px;
+}
+
+.patient-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.view-details-link, .discharge-button {
+  padding: 6px 12px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #ffffff; /* Keep this white for contrast */
+  text-decoration: none;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.view-details-link:hover, .discharge-button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.discharge-button {
+  background-color: rgba(220, 0, 0, 0.4); /* Slightly red background */
+}
+
+.discharge-button:hover {
+  background-color: rgba(220, 0, 0, 0.6); /* Darker red on hover */
+}
+
+.queue-actions {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.no-patients-message {
+  text-align: center;
+  padding: 24px;
+  background-color: #333333;
+  border-radius: 8px;
+  color: #b3b3b3;
+}
+
+/* Add responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .queue-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .queue-header-left {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+  
+  .queue-header-left h1 {
+    margin-bottom: 16px;
+  }
+  
+  .queue-stats {
+    width: 100%;
+  }
+  
+  .stat-pill {
+    flex: 1;
+  }
+  
+  .patient-body {
+    flex-direction: column;
+  }
+  
+  .patient-info {
+    margin-bottom: 12px;
+    margin-right: 0;
+  }
+  
+  .patient-footer {
+    flex-wrap: wrap;
+  }
+  
+  .wait-time, .arrival-time {
+    margin-bottom: 8px;
+  }
+  
+  .patient-actions {
+    width: 100%;
+    margin-top: 8px;
+    justify-content: space-between;
+  }
+}
