@@ -53,6 +53,7 @@ const Login = ({ onLogin, error }) => {
         <div className="login-header">
           <h1>ER Triage System</h1>
           <p>AI-Driven Emergency Room Triage Classification</p>
+          <p style={{ fontSize: '14px', color: '#999', marginTop: '10px' }}>Developed by Andy Ng</p>
         </div>
         <form className="login-form" onSubmit={handleSubmit}>
           {loginError && <div className="error-message">{loginError}</div>}
@@ -90,6 +91,9 @@ const Login = ({ onLogin, error }) => {
               <span>Password: <strong>nursepassword</strong></span>
             </div>
           </div>
+          <p style={{ marginTop: '20px', fontSize: '12px', color: '#666' }}>
+            © 2025 Andy Ng. All rights reserved.
+          </p>
         </div>
       </div>
     </div>
